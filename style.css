@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif; 
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  background-image: url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.box {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #FFF;
+  text-shadow: 2px 2px 5px rgb(25, 67, 68);
+  margin-bottom: 20px;
+}
+h1 b {
+  display: block;
+  color: rgb(112, 211, 212);
+  font-size: 5rem;
+}
+
+.countdown > div {
+  display: inline-block;
+  min-width: 100px;
+  margin: 5px;
+  padding: 10px;
+  background: #3aa0a1;
+  border-radius: 8px;
+  color: #FFF;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.countdown > div > span {
+  display: block;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h1 b {
+    font-size: 3rem;
+  }
+  .countdown > div > span {
+    font-size: 3rem;
+  }
+}
