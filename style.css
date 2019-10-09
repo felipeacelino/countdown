@@ -2,13 +2,16 @@
   box-sizing: border-box;
 }
 
-body, h1, h2, ul {
+body,
+h1,
+h2,
+ul {
   padding: 0;
   margin: 0;
 }
 
 body {
-  font-family: sans-serif; 
+  font-family: sans-serif;
 }
 
 .container {
@@ -18,9 +21,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 
-  background-image: url("./bg.jpg");
+  background-image: url("./chuva.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -32,10 +34,10 @@ body {
 }
 
 h1 {
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   font-size: 3rem;
   font-weight: normal;
-  color: #FFF;
+  color: #fff;
   text-shadow: 2px 2px 5px rgb(25, 67, 68);
   margin-bottom: 20px;
 }
@@ -52,8 +54,8 @@ h1 b {
   padding: 10px;
   background: #3aa0a1;
   border-radius: 8px;
-  color: #FFF;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .countdown > div > span {
   display: block;
