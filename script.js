@@ -47,6 +47,6 @@
     }
   }
 
-  const data = "2019-10-12";
+  const data = "2020-01-14";
   const countdown = new Countdown(data);
 })();
