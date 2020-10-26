@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 body,
 h1,
 h2,
@@ -9,69 +8,119 @@ ul {
   padding: 0;
   margin: 0;
 }
-
 body {
-  font-family: sans-serif;
+  font-family: "Poppins", "Arial", "Helvetica", sans-serif;
 }
-
 .container {
   width: 100%;
   height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-image: url("./bg2.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
-
 .box {
   text-align: center;
   padding: 20px;
 }
-
 h1 {
   font-family: "Lobster", cursive;
   font-size: 3rem;
   font-weight: normal;
   color: #fff;
-  text-shadow: 2px 2px 5px rgb(25, 67, 68);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: 0.3s ease-in-out;
+}
+h1.active {
+  opacity: 1;
+  transform: translateY(0px);
 }
 h1 b {
   display: block;
-  color: rgb(112, 211, 212);
+  color: #ff691a;
   font-size: 5rem;
 }
-
-.countdown > div {
+.countdown {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: 0.3s ease-in-out;
+}
+.countdown.active {
+  opacity: 1;
+  transform: scale(1);
+}
+.cd-item {
   display: inline-block;
-  min-width: 100px;
-  margin: 5px;
-  padding: 10px;
-  background: #3aa0a1;
-  border-radius: 8px;
+  text-align: center;
   color: #fff;
+}
+.cd-item.cd-days {
+  display: none;
+}
+.cd-number {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  background: #fff;
+  color: #222;
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-.countdown > div > span {
+.cd-caption {
   display: block;
-  font-size: 4rem;
-  font-weight: bold;
-  line-height: 100%;
+  margin-top: 5px;
+  font-size: 1em;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
-
+.cd-separator {
+  display: inline-block;
+  margin: 0 2px;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #fff;
+}
+.cd-separator.cd-days {
+  display: none;
+  width: 15px;
+}
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   h1 b {
     font-size: 3rem;
   }
-  .countdown > div > span {
-    font-size: 3rem;
+  .cd-number {
+    width: 60px;
+    height: 60px;
+    font-size: 2em;
+    border-radius: 4px;
+  }
+  .cd-caption {
+    font-size: 0.75em;
+    width: 60px;
+  }
+  .cd-separator {
+    font-size: 2em;
+  }
+  .cd-separator.cd-days {
+    width: 10px;
   }
 }

@@ -4,20 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#3aa0a1">
+  <meta name="theme-color" content="#222222">
   <title>Contagem Regressiva</title>
-  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="container" style="background-image: url('./bg.png');">
     <div class="box">
-      <h1>Contagem Regressiva para o <b>Ceará!</b></h1>
-      <div class="countdown">
-        <div><span data-cd="days"></span>dias</div>
-        <div><span data-cd="hours"></span>horas</div>
-        <div><span data-cd="minutes"></span>minutos</div>
-        <div><span data-cd="seconds"></span>segundos</div>
+      <h1>Contagem Regressiva <b>Sítio Ellos</b></h1>
+      <div class="countdown" data-date="2020-12-18 17:00:00">
+        <div class="cd-item cd-days">
+          <div class="cd-number" data-cd="days">00</div>
+          <div class="cd-caption">Dias</div>
+        </div>
+        <div class="cd-separator cd-days"></div>
+        <div class="cd-item">
+          <div class="cd-number" data-cd="hours">00</div>
+          <div class="cd-caption">Horas</div>
+        </div>
+        <div class="cd-separator">:</div>
+        <div class="cd-item">
+          <div class="cd-number" data-cd="minutes">00</div>
+          <div class="cd-caption">Minutos</div>
+        </div>
+        <div class="cd-separator">:</div>
+        <div class="cd-item">
+          <div class="cd-number" data-cd="seconds">00</div>
+          <div class="cd-caption">Segundos</div>
+        </div>
       </div>
     </div>
   </div>
